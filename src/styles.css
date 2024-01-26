@@ -22,7 +22,7 @@ header {
   align-items: center;
   grid-template-rows: 60px 40px;
 }
-/* 
+
 nav {
   background-color: azure;
   height: 100%;
@@ -38,6 +38,7 @@ nav > a {
   display: flex;
   justify-content: center;
   padding: 5px 0;
+  border-radius: 5px;
   transition: 1s;
 }
 
@@ -48,16 +49,17 @@ nav > a:hover {
 .selected {
   color: white;
   background-color: blue;
-} */
-
+}
+/* 
 nav {
   background-color: azure;
   display: flex;
   align-items: center;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
+
 nav > a {
   min-width: 80px;
   margin: 0 10px;
@@ -75,6 +77,20 @@ a:hover {
 .selected {
   border-bottom: 5px solid blue;
   border-radius: 5px;
+} */
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 main {

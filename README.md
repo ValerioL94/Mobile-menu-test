@@ -1,12 +1,7 @@
-# webpack-template
-
-Template for webpack
+# Mobile menu
 
 -To start run:
 npm install
 
 -Setup github pages:
 git add dist && git commit -m "Initial dist subtree commit"
-
--Useful dependencies:
-npm install date-fns --save
