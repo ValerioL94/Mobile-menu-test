@@ -3,4 +3,92 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: grey;
+}
+
+#content {
+  margin: auto;
+  height: 100%;
+  max-width: 500px;
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+}
+
+header {
+  background-color: cadetblue;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 60px 40px;
+}
+/* 
+nav {
+  background-color: azure;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: auto;
+}
+nav > a {
+  cursor: pointer;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  transition: 1s;
+}
+
+nav > a:hover {
+  background-color: blue;
+  color: white;
+}
+.selected {
+  color: white;
+  background-color: blue;
+} */
+
+nav {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+nav > a {
+  min-width: 80px;
+  margin: 0 10px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+a:hover {
+  border-bottom: 5px solid blue;
+  border-radius: 5px;
+}
+.selected {
+  border-bottom: 5px solid blue;
+  border-radius: 5px;
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.github {
+  height: 20px;
 }
